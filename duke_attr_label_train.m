@@ -1,6 +1,6 @@
 clear;
 load('duke_attribute.mat');
-load('train.mat');
+load('duke_train.mat');
 sizen = size(train,1);
 num = randperm(sizen);
 trainf = train(num, :); 
