@@ -1,5 +1,5 @@
 clear;
-load('test.mat');
+load('market_test.mat');
 load('market_attribute.mat')
 txt  = fopen('test_attr.txt', 'wt');
 for i = 1:13115
