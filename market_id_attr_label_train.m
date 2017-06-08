@@ -1,5 +1,5 @@
 clear;
-load('train_part1.mat');
+load('market_train.mat');
 load('market_attribute.mat')
 txt  = fopen('train_id_attr.txt', 'wt');
 for i = 1:995
