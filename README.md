@@ -8,4 +8,4 @@ Matlab codes for making training and testing labels of Market-1501 Attribute and
 
 3. Run `market_attr_label_test.m` to get attribute labels for testing set of Market-1501;
 
-4. Run other two m-files for DukeMTMC-reID respondingly.
+4. Run other two m-files for DukeMTMC-reID correspondingly.
