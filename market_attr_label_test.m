@@ -1,8 +1,9 @@
 clear;
 load('market_test.mat');
 load('market_attribute.mat')
-txt  = fopen('test_attr.txt', 'wt');
-for i = 1:13115
+sizen = size(test,1);
+txt  = fopen('market_test_attr.txt', 'wt');
+for i = 1:sizen
     
     id = test{i, 2};
 

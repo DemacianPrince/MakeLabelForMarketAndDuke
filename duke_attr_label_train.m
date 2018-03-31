@@ -1,18 +1,16 @@
 clear;
 load('duke_attribute.mat');
 load('duke_train.mat');
-sizen = size(train,1);
-num = randperm(sizen);
-trainf = train(num, :); 
+sizen = size(train,1); 
 txt  = fopen('duke_train_attr.txt', 'wt');
 
 for i = 1: sizen
     
-    label = trainf{i, 2};
+    label = train{i, 2};
     ct = label + 1;
     
     fprintf(txt, '%s%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d\n',...
-        trainf{i,1}, ...
+        train{i,1}, ...
         ' ', duke_attribute.train.backpack(ct) -1,...
         ' ', duke_attribute.train.bag(ct) -1,...
         ' ', duke_attribute.train.handbag(ct) -1,...

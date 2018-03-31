@@ -1,14 +1,15 @@
 clear;
 load('market_train.mat');
 load('market_attribute.mat')
-txt  = fopen('train_id_attr.txt', 'wt');
-for i = 1:995
+sizen = size(train,1);
+txt  = fopen('market_train_id_attr.txt', 'wt');
+for i = 1:sizen
     
-    id = train_part1{i, 2};
+    id = train{i, 2};
     label = id - 1;
 
     fprintf(txt, '%s%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d%s%d\n',...
-        train_part1{i,1}, ...
+        train{i,1}, ...
         ' ', label,...
         ' ', market_attribute.train.age(id),...
         ' ', market_attribute.train.backpack(id),...
